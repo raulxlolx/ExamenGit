@@ -23,7 +23,16 @@
         .input-container input[type="text"] {
             width: 150px;
         }
-		
+        .buttonS{
+            background-color: green;
+            border: none;
+            color: white;
+        }
+        .buttonR{
+            background-color: red;
+            border: none;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -41,8 +50,8 @@
                 <label for="num2">Segundo número:</label>
                 <input type="text" id="num2">
             </div>
-            <input type="button" value="Calcular suma"  onclick="calcularSuma()">
-            <input type="button" value="Calcular Resta"  onclick="calcularResta()">
+            <input type="button" value="Calcular suma"  class="buttonS" onclick="calcularSuma()">
+            <input type="button" value="Calcular Resta" class="buttonR"  onclick="calcularResta()">
         </form>
 
         <div id="resultado"></div>
