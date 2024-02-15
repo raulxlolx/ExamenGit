@@ -33,6 +33,16 @@
             border: none;
             color: white;
         }
+        .buttonD{
+            background-color: rgb(255, 200, 0);
+            border: none;
+            color: white;
+        }
+        .buttonM{
+            background-color: blue;
+            border: none;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -52,7 +62,8 @@
             </div>
             <input type="button" value="Calcular suma"  class="buttonS" onclick="calcularSuma()">
             <input type="button" value="Calcular Resta" class="buttonR"  onclick="calcularResta()">
-            <input type="button" value="Calcular Multiplicacion" style="background-color: blue;"  onclick="calcularMulti()">
+            <input type="button" value="Calcular Multiplicacion" class="buttonM"  onclick="calcularMulti()">
+            <input type="button" value="Calcular Division" class="buttonD"  onclick="calcularDivi()">
         </form>
 
         <div id="resultado"></div>
@@ -94,6 +105,7 @@ function calcularResta() {
         document.getElementById("resultado").innerHTML = "Por favor, ingrese dos números válidos.";
     }
 }
+
 function calcularMulti() {
     // Obtener los valores de los campos de entrada
     var num1 = parseFloat(document.getElementById("num1").value);
@@ -101,16 +113,34 @@ function calcularMulti() {
 
     // Verificar si ambos valores son números
     if (!isNaN(num1) && !isNaN(num2)) {
-        // Calcular la Resta
-        var res = num1 * num2;
+        // Calcular la Multiplicacion
+        var multi = num1 * num2;
 
         // Mostrar el resultado en el elemento con id "resultado"
-        document.getElementById("resultado").innerHTML = "El resultado de la multiplicacion es: " + res;
+        document.getElementById("resultado").innerHTML = "El resultado de la Multiplicacion es: " + multi;
     } else {
         // Mostrar un mensaje de error si los valores no son números
         document.getElementById("resultado").innerHTML = "Por favor, ingrese dos números válidos.";
     }
 }
+function calcularDivi() {
+    // Obtener los valores de los campos de entrada
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+
+    // Verificar si ambos valores son números
+    if (!isNaN(num1) && !isNaN(num2)) {
+        // Calcular la Multiplicacion
+        var res = num1 / num2;
+
+        // Mostrar el resultado en el elemento con id "resultado"
+        document.getElementById("resultado").innerHTML = "El resultado de la Division es: " + res;
+    } else {
+        // Mostrar un mensaje de error si los valores no son números
+        document.getElementById("resultado").innerHTML = "Por favor, ingrese dos números válidos.";
+    }
+}
+
 </script>
 
 </body>
