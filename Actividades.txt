@@ -28,7 +28,7 @@ https://github.com/joseitpfp/ExamSCV.git
 
 14. Regresa al commit "boton color".
 
-15. Realiza un merge en la rama main de la rama producto y cociente a una nueva rama (calculadora)
+15. Realiza un merge en la rama master de la rama producto y cociente a una nueva rama (calculadora)
 
 16. Resuelve los conflictos. 
 
